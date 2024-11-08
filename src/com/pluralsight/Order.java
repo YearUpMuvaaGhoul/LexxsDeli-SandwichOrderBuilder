@@ -22,6 +22,7 @@ class Order {
 
     void takeOrder() {
         Scanner scanner = new Scanner(System.in);
+        UserInterface.displayWelcomeMessage();
         String choice;
         do {
             System.out.println("Add item to your order: (sandwich/drink/chips): ");

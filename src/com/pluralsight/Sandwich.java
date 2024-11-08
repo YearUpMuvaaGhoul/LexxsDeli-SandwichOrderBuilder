@@ -3,14 +3,12 @@ package com.pluralsight;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.ArrayList;
-import java.util.List;
-
+// Class representing a sandwich, extending Item
 class Sandwich extends Item {
-    String size;
-    Bread bread;
-    List<Topping> toppings = new ArrayList<>();
-    boolean isToasted;
+    String size; // Size of the sandwich (4", 8", 12")
+    Bread bread; // Bread type
+    List<Topping> toppings = new ArrayList<>(); // List of toppings
+    boolean isToasted; // Whether the sandwich is toasted or not
 
     Sandwich(String name, String size, Bread bread) {
         super(name);
@@ -18,10 +16,12 @@ class Sandwich extends Item {
         this.bread = bread;
     }
 
+    // Add a topping to the sandwich
     void addTopping(Topping topping) {
         toppings.add(topping);
     }
 
+    // Calculate the price of the sandwich based on size and toppings
     @Override
     double calculatePrice() {
         double basePrice;

@@ -1,12 +1,16 @@
 package com.pluralsight;
 
+// Class representing chips, extending Item
 class Chips extends Item {
-    Chips(String name) {
-        super(name);
+    String type; // Type of chips
+
+    Chips(String type) {
+        super(type);
+        this.type = type;
     }
 
     @Override
     double calculatePrice() {
-        return 1.50;
+        return 1.50; // Fixed price for all chips
     }
 }

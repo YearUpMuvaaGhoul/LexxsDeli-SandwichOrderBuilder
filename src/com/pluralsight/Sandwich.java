@@ -24,20 +24,12 @@ class Sandwich extends Item {
     // Calculate the price of the sandwich based on size and toppings
     @Override
     double calculatePrice() {
-        double basePrice;
-        switch (size) {
-            case "4":
-                basePrice = 5.50;
-                break;
-            case "8":
-                basePrice = 7.00;
-                break;
-            case "12":
-                basePrice = 8.50;
-                break;
-            default:
-                basePrice = 0;
-        }
+        double basePrice = switch (size) {
+            case "4" -> 5.50;
+            case "8" -> 7.00;
+            case "12" -> 8.50;
+            default -> 0;
+        };
         for (Topping topping : toppings) {
             basePrice += topping.calculatePrice(size);
         }

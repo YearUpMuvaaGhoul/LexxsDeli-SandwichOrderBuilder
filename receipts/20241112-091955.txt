@@ -1,0 +1,5 @@
+Receipt:
+Item: Pepsi with pebble ice - $2.0
+Item: Custom Sandwich - $7.6
+Item: hot cheetos - $1.5
+Total: $11.1

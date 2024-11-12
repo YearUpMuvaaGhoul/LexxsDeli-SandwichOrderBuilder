@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-// Abstract class representing an item in the order
+// Abstract class representing an item in the order.. this is the base class
 abstract class Item {
     String name; // Name of the item
     double price; // Price of the item

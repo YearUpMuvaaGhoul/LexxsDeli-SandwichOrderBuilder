@@ -8,10 +8,12 @@ class Order {
     List<Item> items = new ArrayList<>();
     double totalPrice;
 
+    // Method to add an item to the order
     void addItem(Item item) {
         items.add(item);
     }
 
+    // Method to calculate the total price of the order
     double calculateTotal() {
         totalPrice = 0;
         for (Item item : items) {
@@ -20,15 +22,18 @@ class Order {
         return totalPrice;
     }
 
+    // Method to take the user's order
     void takeOrder() {
         Scanner scanner = new Scanner(System.in);
         UserInterface.displayWelcomeMessage();
+        System.out.println("Please enter your name: ");
+        String customerName = scanner.nextLine();
         String choice;
         do {
             System.out.println("Add item to your order: (sandwich/drink/chips): ");
             String itemType = scanner.nextLine();
             if (itemType.equalsIgnoreCase("sandwich")) {
-                Sandwich sandwich = UserInterface.createSandwich();
+                Sandwich sandwich = UserInterface.createSandwich(); // builds sandwich
                 addItem(sandwich);
             } else if (itemType.equalsIgnoreCase("drink")) {
                 Drink drink = UserInterface.createDrink();

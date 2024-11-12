@@ -25,6 +25,8 @@ class Receipt {
             directory.mkdir();
         }
 
+
+
         // Write the receipt to a file
         try (FileWriter writer = new FileWriter(new File(directory, filename))) {
             writer.write(receipt);

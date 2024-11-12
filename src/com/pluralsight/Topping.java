@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 // Class representing a topping on the sandwich
-class Topping {
+public class Topping {
     String name;
     String type;
 
@@ -14,7 +14,7 @@ class Topping {
     // Prices for premium toppings
     static Map<String, Double> premiumToppingPrices = new HashMap<>();
 
-    static {
+   static {
         // Initialize regular toppings
         toppingMenu.put("Lettuce", "Regular");
         toppingMenu.put("Tomato", "Regular");
@@ -40,7 +40,7 @@ class Topping {
         toppingMenu.put("Avocado", "Premium");
 
         // Prices for premium toppings by size
-        premiumToppingPrices.put("Steak", 1.00);    // Small: $1.00, Medium: $2.00, Large: $3.00
+        premiumToppingPrices.put("Steak", 1.00);    // Small 4": $1.00, Medium 8": $2.00, Large 12": $3.00
         premiumToppingPrices.put("Ham", 1.00);
         premiumToppingPrices.put("Salami", 1.00);
         premiumToppingPrices.put("Roast Beef", 1.00);

@@ -1,0 +1,3 @@
+Receipt:
+Item: Custom Sandwich - $5.8
+Total: $5.8

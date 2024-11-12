@@ -1,0 +1,5 @@
+Receipt:
+Item: Custom Sandwich - $7.6
+Item: orange soda with pebble ice - $2.5
+Item: kettle chips - $1.5
+Total: $11.6

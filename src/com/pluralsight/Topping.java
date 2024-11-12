@@ -3,6 +3,12 @@ package com.pluralsight;
 import java.util.HashMap;
 import java.util.Map;
 
+
+// The toppingMenu and premiumToppingPrices HashMaps provide a smart way to store and retrieve information about
+// toppings without the need for cluttering  getter setter methods.
+//Example: Quickly determine if a topping is regular or premium, and fetch its price based on the size.
+
+
 // Class representing a topping on the sandwich
 public class Topping {
     String name;
@@ -26,6 +32,7 @@ public class Topping {
         toppingMenu.put("Guacamole", "Regular");
         toppingMenu.put("Mushrooms", "Regular");
 
+
         // Initialize premium toppings
         toppingMenu.put("Steak", "Premium");
         toppingMenu.put("Ham", "Premium");
@@ -38,6 +45,17 @@ public class Topping {
         toppingMenu.put("Cheddar", "Premium");
         toppingMenu.put("Swiss", "Premium");
         toppingMenu.put("Avocado", "Premium");
+
+       // Initialize sauces/condiments (included in price)
+        toppingMenu.put("Mayo", "Regular");
+        toppingMenu.put("Garlic Aioli", "Regular");
+        toppingMenu.put("Thousand Island", "Regular");
+        toppingMenu.put("Mustard", "Regular");
+        toppingMenu.put("Ranch", "Regular");
+        toppingMenu.put("Vinaigrette", "Regular");
+        toppingMenu.put("Ketchup", "Regular");
+        toppingMenu.put("Oil and Vinegar", "Regular");
+
 
         // Prices for premium toppings by size
         premiumToppingPrices.put("Steak", 1.00);    // Small 4": $1.00, Medium 8": $2.00, Large 12": $3.00

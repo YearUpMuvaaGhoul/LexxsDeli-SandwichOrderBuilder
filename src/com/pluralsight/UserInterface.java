@@ -21,10 +21,19 @@ class UserInterface {
 
         String addMoreToppings;
         do {
-            System.out.println("Available toppings: " + Topping.toppingMenu.keySet());
+            System.out.println("Available toppings: \n" +
+                    "Regular: Lettuce, Tomato, Pickles, Peppers, Onions, Jalapenos, Cucumbers, Guacamole, Mushrooms\n" +
+                    "Premium: Steak, Ham, Salami, Roast Beef, Chicken, Bacon, American, Provolone, Cheddar, Swiss, Avocado\n" +
+                    "Sauces: Mayo, Garlic Aioli, Thousand Island, Mustard, Ranch, Vinaigrette, Ketchup, Oil and Vinegar");
             System.out.println("Add a topping (name): ");
             String toppingName = scanner.nextLine();
 
+            if (toppingName.equalsIgnoreCase("American") ||
+                    toppingName.equalsIgnoreCase("Provolone") ||
+                    toppingName.equalsIgnoreCase("Cheddar") ||
+                    toppingName.equalsIgnoreCase("Swiss")) {
+                toppingName += " Cheese";
+            }
             Topping topping = new Topping(toppingName);
             sandwich.addTopping(topping);
 
@@ -70,5 +79,25 @@ class UserInterface {
 
     static void displayWelcomeMessage() {
         System.out.println("Welcome to Lexx's Deli! Ready to order a sandwich?");
+    }
+
+    // Method to show checkout options
+    static void showCheckoutOptions(Order order) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Here are your order details:");
+        for (Item item : order.items) {
+            System.out.println("Item: " + item.name + " - $" + item.calculatePrice());
+        }
+        System.out.println("Total: $" + order.calculateTotal());
+        System.out.println("Would you like to Confirm or Cancel your order? (confirm/cancel)");
+
+        String choice = scanner.nextLine();
+        if (choice.equalsIgnoreCase("confirm")) {
+            System.out.println("Please enter your name: ");
+            String customerName = scanner.nextLine();
+            Receipt.generateReceipt(order, customerName);
+        } else if (choice.equalsIgnoreCase("cancel")) {
+            System.out.println("Order cancelled. Returning to home screen...");
+        }
     }
 }

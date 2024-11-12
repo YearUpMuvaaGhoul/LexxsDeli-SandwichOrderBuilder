@@ -37,6 +37,7 @@ import java.time.format.DateTimeFormatter;
                     writer.write(receipt);
                     System.out.println(receipt); // Print receipt details to the console for verification
                     System.out.println("Receipt saved as " + filename);
+
                 } catch (IOException e) {
                     System.out.println("An error occurred while saving the receipt: " + e.getMessage());
                 }

@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.Scanner;
 
 class Order {
-    List<Item> items = new ArrayList<>();
+    static List<Item> items = new ArrayList<>();
     double totalPrice;
 
     // Method to add an item to the order
-    void addItem(Item item) {
+    static void addItem(Item item) {
         items.add(item);
     }
 
@@ -23,11 +23,11 @@ class Order {
     }
 
     // Method to take the user's order
-    void takeOrder() {
+    static void takeOrder() {
         Scanner scanner = new Scanner(System.in);
         UserInterface.displayWelcomeMessage();
-        System.out.println("Please enter your name: ");
-        String customerName = scanner.nextLine();
+       // System.out.println("Please enter your name: ");
+       // String customerName = scanner.nextLine();
         String choice;
         do {
             System.out.println("Add item to your order: (sandwich/drink/chips): ");

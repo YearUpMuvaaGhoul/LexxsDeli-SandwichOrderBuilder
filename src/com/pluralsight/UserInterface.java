@@ -6,7 +6,7 @@ class UserInterface {
 
     static Sandwich createSandwich() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter size of the sandwich (4/8/12): ");
+        System.out.println("Enter size of the sandwich (4/8/12 inch): ");
         String size = scanner.nextLine();
 
         System.out.println("Enter bread type (white/wheat/rye/wrap/hero): ");

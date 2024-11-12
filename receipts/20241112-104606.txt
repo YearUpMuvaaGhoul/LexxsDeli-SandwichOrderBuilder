@@ -1,0 +1,10 @@
+Receipt:
+Customer Name: musa
+Date: 2024/11/12 10:46:06
+-----------------------------
+Item: Custom Sandwich - $7.6
+Item: orange soda with pebble ice - $2.0
+Item: hot cheetos - $1.5
+Item: pepsi with pebble ice - $2.0
+-----------------------------
+Total: $13.1

@@ -1,0 +1,32 @@
+Receipt:
+Customer Name: nikesh
+Date: 2024/11/13 15:40:05
+-----------------------------
+Item: Custom Sandwich
+  Size: 8
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Provolone Cheese ($1.5)
+    - Steak ($2.0)
+    - Lettuce ($0.0)
+    - Mayo ($0.0)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $12.1
+Drink: Orange Soda with pebble ice (Medium) - $2.5
+Item: Custom Sandwich
+  Size: 4
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Roast Beef ($1.0)
+    - Peppers ($0.0)
+    - American Cheese ($0.75)
+  Extra Cheese: Yes
+  Extra Meat: No
+  Total: $7.55
+Drink: Pepsi with pebble ice (Medium) - $2.5
+Chips: BBQ Chips - $1.5
+-----------------------------
+Total: $26.15

@@ -1,4 +1,7 @@
-package com.pluralsight;
+package com.pluralsight.Utils;
+
+import com.pluralsight.BaseClasses.*;
+import com.pluralsight.Utils.*;
 
 import java.util.Scanner;
 

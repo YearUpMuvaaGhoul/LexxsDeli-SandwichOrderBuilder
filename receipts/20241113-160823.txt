@@ -1,0 +1,32 @@
+Receipt:
+Customer Name: lexx
+Date: 2024/11/13 16:08:23
+-----------------------------
+Drink: Orange Soda with pebble ice (Large) - $3.0
+Item: Custom Sandwich
+  Size: 4
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Lettuce ($0.0)
+    - Steak ($1.0)
+    - Mayo ($0.0)
+    - Provolone Cheese ($0.75)
+  Extra Cheese: No
+  Extra Meat: Yes
+  Total: $7.75
+Chips: Sour Cream & Onion Chips - $1.5
+Item: Custom Sandwich
+  Size: 12
+  Bread: hero
+  Toasted: No
+  Toppings:
+    - Tomato ($0.0)
+    - Ham ($3.0)
+    - Thousand Island ($0.0)
+    - American Cheese ($2.25)
+  Extra Cheese: No
+  Extra Meat: Yes
+  Total: $15.25
+-----------------------------
+Total: $27.5

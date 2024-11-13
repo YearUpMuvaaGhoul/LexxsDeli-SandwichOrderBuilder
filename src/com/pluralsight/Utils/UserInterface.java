@@ -1,8 +1,17 @@
-package com.pluralsight;
+package com.pluralsight.Utils;
+
+import com.pluralsight.BaseClasses.Item;
+import com.pluralsight.BaseClasses.Order;
+import com.pluralsight.OtherOrderItems.Chips;
+import com.pluralsight.OtherOrderItems.Drink;
+import com.pluralsight.Utils.Receipt;
+import com.pluralsight.SandwichBuilder.Bread;
+import com.pluralsight.SandwichBuilder.Sandwich;
+import com.pluralsight.SandwichBuilder.Topping;
 
 import java.util.Scanner;
 
-class UserInterface {
+public class UserInterface {
 
     public static void main(String[] args) { // pulls from main to start UI console
         Order order = new Order();
@@ -11,7 +20,7 @@ class UserInterface {
     }
 
     // Method to take the user's order
-    static void takeOrder(Order order) {
+   public static void takeOrder(Order order) {
         Scanner scanner = new Scanner(System.in);
         String addMoreItems = "yes";
 
@@ -39,7 +48,7 @@ class UserInterface {
         }
     }
 
-    static void addDrink(Order order, Scanner scanner) {
+   public static void addDrink(Order order, Scanner scanner) {
         System.out.println("Select a drink:");
         System.out.println("1. Orange Soda, 2. Grape Soda, 3. Pepsi, 4. Sprite, 5. Iced Tea, 6. Lemonade, 7. Mango Lemonade, 8. Fruit Punch, 9. Seltzer, 10. Vitamin Water");
         System.out.println("Enter drink number: ");
@@ -69,7 +78,7 @@ class UserInterface {
         order.addItem(drink);
     }
 
-    static void addChips(Order order, Scanner scanner) {
+  public static void addChips(Order order, Scanner scanner) {
         System.out.println("Select a type of chips:");
         System.out.println("1. Regular Chips, 2. BBQ Chips, 3. Sour Cream & Onion Chips, 4. Salt & Vinegar Chips, 5. Jalapeno Chips, 6. Hot Cheetos, 7. Kettle Chips, 8. Lays Potato Chips, 9. Funyuns");
         System.out.println("Enter chips number: ");
@@ -94,7 +103,7 @@ class UserInterface {
         order.addItem(chips);
     }
 
-    static void addSandwich(Order order, Scanner scanner) {
+ public static void addSandwich(Order order, Scanner scanner) {
         String addMoreSandwiches = "yes";
 
         while (addMoreSandwiches.equalsIgnoreCase("yes")) {
@@ -187,7 +196,7 @@ class UserInterface {
     }
 
     // Method to show checkout options and confirm or cancel the order
-    static void showCheckoutOptions(Order order) {
+    public static void showCheckoutOptions(Order order) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Here are your order details:");
         for (Item item : order.items) {

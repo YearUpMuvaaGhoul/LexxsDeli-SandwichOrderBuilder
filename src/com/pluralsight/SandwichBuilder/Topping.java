@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.SandwichBuilder;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +11,7 @@ import java.util.Map;
 
 // Class representing a topping on the sandwich
 public class Topping {
-    String name;
+    public String name;
     String type;
 
     // Menu of toppings with their type (Regular or Premium)
@@ -71,12 +71,12 @@ public class Topping {
         premiumToppingPrices.put("Avocado", 1.00);
     }
 
-    Topping(String name) { this.name = name;
+    public Topping(String name) { this.name = name;
     // Get the type of topping (Regular or Premium) from the menu
         this.type = toppingMenu.getOrDefault(name, "Regular");
     }
 
-    double calculatePrice(String size) {
+    public double calculatePrice(String size) {
         double price = 0;
         if (type.equals("Premium")) {
             // Calculate price for premium toppings based on sandwich size

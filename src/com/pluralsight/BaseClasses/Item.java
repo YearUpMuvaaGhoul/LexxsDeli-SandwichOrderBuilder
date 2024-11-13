@@ -1,17 +1,17 @@
-package com.pluralsight;
+package com.pluralsight.BaseClasses;
 
 // Abstract class representing an item in the order. this is the base class
-abstract class Item {
-    String name; // Name of the item
-    double price; // Price of the item
+public abstract class Item {
+    public String name; // Name of the item
+    public double price; // Price of the item
 
 
-    Item(String name) {
+    protected Item(String name) {
         this.name = name;
     }
 
     // Abstract method to calculate price, implemented by subclasses
-    abstract double calculatePrice();
+    public abstract double calculatePrice();
 }
 
 //The Item class is designed as an abstract class to provide

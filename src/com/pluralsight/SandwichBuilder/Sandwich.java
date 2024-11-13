@@ -1,43 +1,45 @@
-package com.pluralsight;
+package com.pluralsight.SandwichBuilder;
+
+import com.pluralsight.BaseClasses.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 // Class representing a sandwich, extending Item
 
-class Sandwich extends Item {
-    String size; // Size of the sandwich (e.g., 4, 8, 12 inches)
-    Bread bread; // Type of bread
-    List<Topping> toppings = new ArrayList<>(); // List of toppings
-    boolean isToasted; // Whether the sandwich is toasted
-    int extraCheese; // Extra cheese option
-    int extraMeat; // Extra meat option
+public class Sandwich extends Item {
+    public String size; // Size of the sandwich (e.g., 4, 8, 12 inches)
+    public Bread bread; // Type of bread
+    public List<Topping> toppings = new ArrayList<>(); // List of toppings
+    public boolean isToasted; // Whether the sandwich is toasted
+    public int extraCheese; // Extra cheese option
+    public int extraMeat; // Extra meat option
 
     // Constructor to initialize a sandwich
-    Sandwich(String name, String size, Bread bread) {
+    public Sandwich(String name, String size, Bread bread) {
         super(name); // Call the constructor of the Item class
         this.size = size;
         this.bread = bread;
     }
 
     // Method to add a topping to the sandwich
-    void addTopping(Topping topping) {
+    public void addTopping(Topping topping) {
         toppings.add(topping);
     }
 
     // Method to set the amount of extra cheese
-    void setExtraCheese(int extraCheese) {
+    public void setExtraCheese(int extraCheese) {
         this.extraCheese = extraCheese;
     }
 
     // Method to set the amount of extra meat
-    void setExtraMeat(int extraMeat) {
+    public void setExtraMeat(int extraMeat) {
         this.extraMeat = extraMeat;
     }
 
     // Method to calculate the base price of the sandwich based on its size
     @Override
-    double calculatePrice() {
+    public double calculatePrice() {
         double basePrice;
         switch (size) {
             case "4":
@@ -56,7 +58,7 @@ class Sandwich extends Item {
     }
 
     // Method to calculate the price of extra cheese
-    double calculateExtraCheesePrice() {
+    public double calculateExtraCheesePrice() {
         double extraCheesePrice = 0;
         switch (size) {
             case "4":
@@ -73,7 +75,7 @@ class Sandwich extends Item {
     }
 
     // Method to calculate the price of extra meat
-    double calculateExtraMeatPrice() {
+    public double calculateExtraMeatPrice() {
         double extraMeatPrice = 0;
         switch (size) {
             case "4":
@@ -90,7 +92,7 @@ class Sandwich extends Item {
     }
 
     // Method to calculate the total cost of the sandwich
-    double calculateTotalCost() {
+    public double calculateTotalCost() {
         double basePrice = calculatePrice(); // Base price of the sandwich
 
         // Loop through all the toppings and add their prices to the topping price

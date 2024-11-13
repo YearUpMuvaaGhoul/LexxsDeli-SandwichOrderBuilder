@@ -1,4 +1,11 @@
-package com.pluralsight;
+package com.pluralsight.Utils;
+
+import com.pluralsight.BaseClasses.Item;
+import com.pluralsight.BaseClasses.Order;
+import com.pluralsight.OtherOrderItems.Chips;
+import com.pluralsight.OtherOrderItems.Drink;
+import com.pluralsight.SandwichBuilder.Sandwich;
+import com.pluralsight.SandwichBuilder.Topping;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -6,10 +13,10 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-class Receipt {
+public class Receipt {
 
     // Method to generate and save the receipt
-    static void generateReceipt(Order order, String customerName) {
+  public static void generateReceipt(Order order, String customerName) {
 
         // Create a StringBuilder object, named receipt, which is created to construct the receipt text.
         StringBuilder receipt = new StringBuilder();

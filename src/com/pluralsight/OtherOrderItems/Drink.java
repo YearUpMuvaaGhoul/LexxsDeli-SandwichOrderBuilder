@@ -1,18 +1,20 @@
-package com.pluralsight;
+package com.pluralsight.OtherOrderItems;
+
+import com.pluralsight.BaseClasses.*;
 
 // Class representing a drink, extending Item
-class Drink extends Item {
-    String size; // Size of the drink (Small, Medium, Large)
+public class Drink extends Item {
+    public String size; // Size of the drink (Small, Medium, Large)
     String type; // Type of the drink
 
-    Drink(String type, String size) {
+    public Drink(String type, String size) {
         super(type + " with pebble ice");
         this.size = size;
         this.type = type;
     }
 
     @Override
-    double calculatePrice() {
+    public double calculatePrice() {
         // Fixed prices based on the size of the drink
         switch (size.toLowerCase()) {
             case "small":

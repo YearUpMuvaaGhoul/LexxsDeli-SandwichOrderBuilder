@@ -1,0 +1,7 @@
+Receipt:
+Customer Name: adrys
+Date: 2024/11/13 14:24:20
+-----------------------------
+Drink: Orange Soda with pebble ice (Medium) - $0.0
+-----------------------------
+Total: $2.5

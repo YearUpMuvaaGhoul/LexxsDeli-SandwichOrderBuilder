@@ -1,0 +1,21 @@
+Receipt:
+Customer Name: ylandre
+Date: 2024/11/13 14:25:35
+-----------------------------
+Item: Custom Sandwich
+  Size: 4
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Steak ($1.0)
+    - Garlic Aioli ($0.0)
+    - American Cheese ($0.75)
+    - Bacon ($1.0)
+    - Lettuce ($0.0)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $9.05
+Chips: Sour Cream & Onion Chips - $0.0
+Chips: BBQ Chips - $0.0
+-----------------------------
+Total: $12.05

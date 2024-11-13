@@ -1,0 +1,7 @@
+Receipt:
+Customer Name: lexx
+Date: 2024/11/13 14:19:45
+-----------------------------
+Item: Grape Soda with pebble ice - $2.5
+-----------------------------
+Total: $2.5

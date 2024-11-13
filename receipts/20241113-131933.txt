@@ -1,0 +1,21 @@
+Receipt:
+Customer Name: lexx
+Date: 2024/11/13 13:19:33
+-----------------------------
+Item: Custom Sandwich
+  Size: 4
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Lettuce ($0.0)
+    - Tomato ($0.0)
+    - American Cheese ($0.75)
+    - Bacon ($1.0)
+    - Mayo ($0.0)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $8.05
+Item: Orange Soda with pebble ice - $2.5
+Item: Sour Cream & Onion Chips - $1.5
+-----------------------------
+Total: $12.05

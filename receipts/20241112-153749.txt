@@ -1,0 +1,8 @@
+Receipt:
+Customer Name: skylar
+Date: 2024/11/12 15:37:49
+-----------------------------
+Item: pepsi with pebble ice - $3.0
+Item: doritos cool ranch - $1.5
+-----------------------------
+Total: $4.5

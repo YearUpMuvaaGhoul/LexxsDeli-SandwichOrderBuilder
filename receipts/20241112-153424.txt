@@ -1,0 +1,9 @@
+Receipt:
+Customer Name: Arameh
+Date: 2024/11/12 15:34:24
+-----------------------------
+Item: Custom Sandwich - $9.4
+Item: Pepsi with pebble ice - $2.5
+Item: Doritos Cool Ranch - $1.5
+-----------------------------
+Total: $13.4

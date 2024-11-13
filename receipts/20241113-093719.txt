@@ -1,0 +1,8 @@
+Receipt:
+Customer Name: lexx
+Date: 2024/11/13 09:37:19
+-----------------------------
+Item: Custom Sandwich - $5.8
+Item: pepsi with pebble ice - $2.0
+-----------------------------
+Total: $7.8

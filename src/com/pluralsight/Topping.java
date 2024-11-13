@@ -20,7 +20,7 @@ public class Topping {
     // Prices for premium toppings
     static Map<String, Double> premiumToppingPrices = new HashMap<>();
 
-   static {
+    static {
         // Initialize regular toppings
         toppingMenu.put("Lettuce", "Regular");
         toppingMenu.put("Tomato", "Regular");
@@ -46,7 +46,7 @@ public class Topping {
         toppingMenu.put("Swiss", "Premium");
         toppingMenu.put("Avocado", "Premium");
 
-       // Initialize sauces/condiments (included in price)
+        // Initialize sauces/condiments (included in price)
         toppingMenu.put("Mayo", "Regular");
         toppingMenu.put("Garlic Aioli", "Regular");
         toppingMenu.put("Thousand Island", "Regular");
@@ -71,41 +71,33 @@ public class Topping {
         premiumToppingPrices.put("Avocado", 1.00);
     }
 
-    Topping(String name) {
-        this.name = name;
-        // Determine the type of topping (Regular or Premium) from the menu
+    Topping(String name) { this.name = name;
+    // Get the type of topping (Regular or Premium) from the menu
         this.type = toppingMenu.getOrDefault(name, "Regular");
     }
 
     double calculatePrice(String size) {
-        // If the topping is premium, calculate price based on the size of the sandwich
+        double price = 0;
         if (type.equals("Premium")) {
+            // Calculate price for premium toppings based on sandwich size
             double pricePerUnit = premiumToppingPrices.get(name);
             switch (size) {
                 case "4":
-                    return pricePerUnit;
+                    price = pricePerUnit;
+                    break;
                 case "8":
-                    return 2 * pricePerUnit;
+                    price = 2 * pricePerUnit;
+                    break;
                 case "12":
-                    return 3 * pricePerUnit;
-                default:
-                    return 0;
-            }
+                    price = 3 * pricePerUnit;
+                    break;
+
         }
-        // If the topping is extra cheese, calculate price based on the size of the sandwich
-        else if (name.equals("Extra Cheese")) {
-            switch (size) {
-                case "4":
-                    return 0.30;
-                case "8":
-                    return 0.60;
-                case "12":
-                    return 0.90;
-                default:
-                    return 0;
-            }
+
         }
-        // Regular toppings are free
-        return 0;
+
+        return price;
     }
+
+
 }

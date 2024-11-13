@@ -6,6 +6,8 @@ class UserInterface {
 
     // Method to take the user's order
     static void takeOrder(Order order) {
+
+
         Scanner scanner = new Scanner(System.in);
 
         // Prompt for sandwich size

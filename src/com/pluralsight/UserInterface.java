@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class UserInterface {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // pulls from main to start UI console
         Order order = new Order();
         takeOrder(order);
         showCheckoutOptions(order);
@@ -64,13 +64,6 @@ class UserInterface {
         System.out.println("Select a size: 1. Small ($2.00), 2. Medium ($2.50), 3. Large ($3.00)");
         int drinkSize = scanner.nextInt();
         scanner.nextLine();  // Consume the newline
-//        double drinkPrice = 0;
-//        switch (drinkSize) {
-//            case 1: drinkPrice = 2.00; break;
-//            case 2: drinkPrice = 2.50; break;
-//            case 3: drinkPrice = 3.00; break;
-//            default: System.out.println("Invalid size. Defaulting to Small ($2.00)"); drinkPrice = 2.00; break;
-//        }
 
         Drink drink = new Drink(drinkName, (drinkSize == 1 ? "Small" : drinkSize == 2 ? "Medium" : "Large"));
         order.addItem(drink);

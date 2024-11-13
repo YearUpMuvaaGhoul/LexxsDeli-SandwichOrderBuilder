@@ -82,13 +82,13 @@ public class Topping {
             // Calculate price for premium toppings based on sandwich size
             double pricePerUnit = premiumToppingPrices.get(name);
             switch (size) {
-                case "4":
+                case "4": // if size is 4, it is price per unit
                     price = pricePerUnit;
                     break;
-                case "8":
+                case "8": // for 8 inch, price of topping set above is doubled
                     price = 2 * pricePerUnit;
                     break;
-                case "12":
+                case "12": // if 12 inch, price stated above is tripled
                     price = 3 * pricePerUnit;
                     break;
 

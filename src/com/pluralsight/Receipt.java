@@ -11,7 +11,7 @@ class Receipt {
     // Method to generate and save the receipt
     static void generateReceipt(Order order, String customerName) {
 
-        // Create a StringBuilder to build the receipt text
+        // Create a StringBuilder object, named receipt, which is created to construct the receipt text.
         StringBuilder receipt = new StringBuilder();
 
         // Append receipt header information
@@ -22,7 +22,7 @@ class Receipt {
 
         // Iterate through each item in the order and append its details to the receipt
         for (Item item : order.items) {
-            if (item instanceof Sandwich) {
+            if (item instanceof Sandwich) { //
                 Sandwich sandwich = (Sandwich) item;
                 receipt.append("Item: ").append(sandwich.name).append("\n");
                 receipt.append("  Size: ").append(sandwich.size).append("\n");

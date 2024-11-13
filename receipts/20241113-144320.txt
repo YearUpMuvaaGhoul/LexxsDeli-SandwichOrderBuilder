@@ -1,0 +1,21 @@
+Receipt:
+Customer Name: Arameh
+Date: 2024/11/13 14:43:20
+-----------------------------
+Item: Custom Sandwich
+  Size: 12
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Steak ($3.0)
+    - Lettuce ($0.0)
+    - Mayo ($0.0)
+    - Bacon ($3.0)
+    - Cheddar Cheese ($2.25)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $19.15
+Drink: Sprite with pebble ice (Large) - $3.0
+Chips: Hot Cheetos - $1.5
+-----------------------------
+Total: $23.65

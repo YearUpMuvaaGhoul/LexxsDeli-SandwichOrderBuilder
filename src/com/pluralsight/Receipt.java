@@ -38,11 +38,11 @@ class Receipt {
             } else if (item instanceof Drink) {
                 Drink drink = (Drink) item;
                 // Append drink details, including name, size, and price
-                receipt.append("Drink: ").append(drink.name).append(" (").append(drink.size).append(") - $").append(drink.price).append("\n");
+                receipt.append("Drink: ").append(drink.name).append(" (").append(drink.size).append(") - $").append(drink.calculatePrice()).append("\n");
             } else if (item instanceof Chips) {
                 Chips chips = (Chips) item;
                 // Append chips details, including name and price fixed at 1.50
-                receipt.append("Chips: ").append(chips.name).append(" - $").append(chips.price).append("\n");
+                receipt.append("Chips: ").append(chips.name).append(" - $").append(chips.calculatePrice()).append("\n");
             } else {
                 // Append details for any other item types
                 receipt.append("Item: ").append(item.name).append(" - $").append(item.calculatePrice()).append("\n");

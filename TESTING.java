@@ -84,7 +84,7 @@ class UserInterface {
                 default: System.out.println("Invalid topping number. Please try again."); continue;
             }
 
-            // Add the topping to the sandwich
+
             Topping topping = new Topping(toppingName);
             sandwich.addTopping(topping);
 
@@ -103,7 +103,7 @@ class UserInterface {
         String extraMeat = scanner.nextLine();
         sandwich.setExtraMeat(extraMeat.equalsIgnoreCase("yes") ? 1 : 0);
 
-        // Add the sandwich to the order
+
         order.addItem(sandwich);
 
         // Prompt for drink options

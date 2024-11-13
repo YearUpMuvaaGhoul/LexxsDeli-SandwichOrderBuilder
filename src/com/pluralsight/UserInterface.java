@@ -64,13 +64,13 @@ class UserInterface {
         System.out.println("Select a size: 1. Small ($2.00), 2. Medium ($2.50), 3. Large ($3.00)");
         int drinkSize = scanner.nextInt();
         scanner.nextLine();  // Consume the newline
-        double drinkPrice = 0;
-        switch (drinkSize) {
-            case 1: drinkPrice = 2.00; break;
-            case 2: drinkPrice = 2.50; break;
-            case 3: drinkPrice = 3.00; break;
-            default: System.out.println("Invalid size. Defaulting to Small ($2.00)"); drinkPrice = 2.00; break;
-        }
+//        double drinkPrice = 0;
+//        switch (drinkSize) {
+//            case 1: drinkPrice = 2.00; break;
+//            case 2: drinkPrice = 2.50; break;
+//            case 3: drinkPrice = 3.00; break;
+//            default: System.out.println("Invalid size. Defaulting to Small ($2.00)"); drinkPrice = 2.00; break;
+//        }
 
         Drink drink = new Drink(drinkName, (drinkSize == 1 ? "Small" : drinkSize == 2 ? "Medium" : "Large"));
         order.addItem(drink);
@@ -118,8 +118,10 @@ class UserInterface {
             String toasted = scanner.nextLine();
             sandwich.isToasted = toasted.equalsIgnoreCase("yes");
 
+            // Loop to add toppings
             String addMoreToppings = "yes";
             while (addMoreToppings.equalsIgnoreCase("yes")) {
+                // Display available toppings
                 System.out.println("Available toppings:");
                 System.out.println("Regular:");
                 System.out.println("1. Lettuce, 2. Tomato, 3. Pickles, 4. Peppers, 5. Onions, 6. Jalapenos, 7. Cucumbers, 8. Guacamole, 9. Mushrooms");
@@ -128,10 +130,12 @@ class UserInterface {
                 System.out.println("Sauces:");
                 System.out.println("21. Mayo, 22. Garlic Aioli, 23. Thousand Island, 24. Mustard, 25. Ranch, 26. Vinaigrette, 27. Ketchup, 28. Oil and Vinegar");
 
+                // Prompt for topping selection by number
                 System.out.println("Enter topping number: ");
                 int toppingNumber = scanner.nextInt();
                 scanner.nextLine();  // Consume the newline
 
+                // Map the topping number to the topping name
                 String toppingName = "";
                 switch (toppingNumber) {
                     case 1: toppingName = "Lettuce"; break;
@@ -164,22 +168,24 @@ class UserInterface {
                     case 28: toppingName = "Oil and Vinegar"; break;
                     default: System.out.println("Invalid topping number. Please try again."); continue;
                 }
-
+                // Add the topping to the sandwich
                 Topping topping = new Topping(toppingName);
                 sandwich.addTopping(topping);
 
                 System.out.println("Add another topping? (yes/no): ");
                 addMoreToppings = scanner.nextLine();
             }
-
+        // prompt for extra cheese?
             System.out.println("Would you like extra cheese? (yes/no): ");
             String extraCheese = scanner.nextLine();
             sandwich.setExtraCheese(extraCheese.equalsIgnoreCase("yes") ? 1 : 0);
 
+         //prompt for extra meat ?
             System.out.println("Would you like extra meat? (yes/no): ");
             String extraMeat = scanner.nextLine();
             sandwich.setExtraMeat(extraMeat.equalsIgnoreCase("yes") ? 1 : 0);
 
+            // Add the sandwich to the order
             order.addItem(sandwich);
 
             System.out.println("Would you like to customize another sandwich? (yes/no): ");

@@ -1,0 +1,32 @@
+Receipt:
+Customer Name: skylar my kid
+Date: 2024/11/13 14:32:32
+-----------------------------
+Drink: Grape Soda with pebble ice (Medium) - $0.0
+Item: Custom Sandwich
+  Size: 8
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Steak ($2.0)
+    - Lettuce ($0.0)
+    - Provolone Cheese ($1.5)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $12.1
+Item: Custom Sandwich
+  Size: 4
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Ham ($1.0)
+    - American Cheese ($0.75)
+    - Mayo ($0.0)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $8.05
+Drink: Orange Soda with pebble ice (Small) - $0.0
+Chips: BBQ Chips - $0.0
+Chips: BBQ Chips - $0.0
+-----------------------------
+Total: $27.65

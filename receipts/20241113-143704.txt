@@ -1,0 +1,34 @@
+Receipt:
+Customer Name: arameh
+Date: 2024/11/13 14:37:04
+-----------------------------
+Item: Custom Sandwich
+  Size: 8
+  Bread: rye
+  Toasted: Yes
+  Toppings:
+    - Lettuce ($0.0)
+    - Salami ($2.0)
+  Extra Cheese: No
+  Extra Meat: Yes
+  Total: $10.0
+Item: Custom Sandwich
+  Size: 12
+  Bread: hero
+  Toasted: Yes
+  Toppings:
+    - Lettuce ($0.0)
+    - Steak ($3.0)
+    - Roast Beef ($3.0)
+    - Provolone Cheese ($2.25)
+    - Tomato ($0.0)
+    - Mayo ($0.0)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $19.15
+Chips: Sour Cream & Onion Chips - $1.5
+Chips: BBQ Chips - $1.5
+Drink: Grape Soda with pebble ice (Medium) - $2.5
+Drink: Orange Soda with pebble ice (Small) - $2.0
+-----------------------------
+Total: $36.65

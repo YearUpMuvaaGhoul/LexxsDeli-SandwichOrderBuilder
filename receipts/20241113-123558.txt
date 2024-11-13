@@ -1,0 +1,22 @@
+Receipt:
+Customer Name: lexx
+Date: 2024/11/13 12:35:58
+-----------------------------
+Item: Custom Sandwich
+  Size: 8
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Lettuce ($0.0)
+    - Steak ($2.0)
+    - Ham ($2.0)
+    - Provolone Cheese ($1.5)
+    - Pickles ($0.0)
+    - Garlic Aioli ($0.0)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $14.1
+Item: Lemonade with pebble ice - $2.5
+Item: Jalapeno Chips - $1.5
+-----------------------------
+Total: $18.1

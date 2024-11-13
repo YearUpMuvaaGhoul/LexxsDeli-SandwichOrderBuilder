@@ -103,7 +103,7 @@ class UserInterface {
         String addDrink = scanner.nextLine();
         if (addDrink.equalsIgnoreCase("yes")) {
             System.out.println("Select a drink:");
-            System.out.println("1. Pepsi, 2. Lemonade, 3. Mango Lemonade, 4. Mountain Dew, 5. Seltzer, 6. Vitamin Water, 7. Aloe Vera Drink, 8. Fruit Punch");
+            System.out.println("1. Orange Soda, 2. Grape Soda, 3. Pepsi, 4. Sprite, 5. Iced Tea, 6. Lemonade, 7. Mango Lemonade, 8. Fruit Punch, 9. Seltzer, 10. Vitamin Water");
             System.out.println("Enter drink number: ");
             int drinkNumber = scanner.nextInt();
             scanner.nextLine();  // Consume the newline
@@ -111,14 +111,16 @@ class UserInterface {
             // Map the drink number to the drink name
             String drinkName = "";
             switch (drinkNumber) {
-                case 1: drinkName = "Pepsi"; break;
-                case 2: drinkName = "Lemonade"; break;
-                case 3: drinkName = "Mango Lemonade"; break;
-                case 4: drinkName = "Mountain Dew"; break;
-                case 5: drinkName = "Seltzer"; break;
-                case 6: drinkName = "Vitamin Water"; break;
-                case 7: drinkName = "Aloe Vera Drink"; break;
+                case 1: drinkName = "Orange Soda"; break;
+                case 2: drinkName = "Grape Soda"; break;
+                case 3: drinkName = "Pepsi"; break;
+                case 4: drinkName = "Sprite"; break;
+                case 5: drinkName = "Iced Tea"; break;
+                case 6: drinkName = "Lemonade"; break;
+                case 7: drinkName = "Mango Lemonade"; break;
                 case 8: drinkName = "Fruit Punch"; break;
+                case 9: drinkName = "Seltzer"; break;
+                case 10: drinkName = "Vitamin Water"; break;
                 default: System.out.println("Invalid drink number. Please try again.");
             }
 

@@ -1,0 +1,21 @@
+Receipt:
+Customer Name: lexx
+Date: 2024/11/13 12:18:32
+-----------------------------
+Item: Custom Sandwich
+  Size: 4
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Lettuce ($0.0)
+    - Steak ($1.0)
+    - Bacon ($1.0)
+    - American Cheese ($0.75)
+    - Mayo ($0.0)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $9.05
+Item: Pepsi with pebble ice - $2.0
+Item: Salt & Vinegar Chips - $1.5
+-----------------------------
+Total: $12.55

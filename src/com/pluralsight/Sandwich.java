@@ -15,7 +15,7 @@ class Sandwich extends Item {
 
     // Constructor to initialize a sandwich
     Sandwich(String name, String size, Bread bread) {
-        super(name);
+        super(name); // Call the constructor of the Item class
         this.size = size;
         this.bread = bread;
     }
@@ -55,17 +55,8 @@ class Sandwich extends Item {
         return basePrice;
     }
 
-    // Method to calculate the total cost of the sandwich
-    double calculateTotalCost() {
-        double basePrice = calculatePrice(); // Base price of the sandwich
-
-        // Loop through all the toppings and add their prices to the topping price
-        double toppingPrice = 0;
-        for (Topping topping : toppings) {
-            toppingPrice += topping.calculatePrice(size);
-        }
-
-        // Calculate the price for extra cheese
+    // Method to calculate the price of extra cheese
+    double calculateExtraCheesePrice() {
         double extraCheesePrice = 0;
         switch (size) {
             case "4":
@@ -78,8 +69,11 @@ class Sandwich extends Item {
                 extraCheesePrice = extraCheese * 0.90;
                 break;
         }
+        return extraCheesePrice;
+    }
 
-        // Calculate the price for extra meat
+    // Method to calculate the price of extra meat
+    double calculateExtraMeatPrice() {
         double extraMeatPrice = 0;
         switch (size) {
             case "4":
@@ -92,8 +86,24 @@ class Sandwich extends Item {
                 extraMeatPrice = extraMeat * 1.50;
                 break;
         }
+        return extraMeatPrice;
+    }
+
+    // Method to calculate the total cost of the sandwich
+    double calculateTotalCost() {
+        double basePrice = calculatePrice(); // Base price of the sandwich
+
+        // Loop through all the toppings and add their prices to the topping price
+        double toppingPrice = 0;
+        for (Topping topping : toppings) {
+            toppingPrice += topping.calculatePrice(size);
+        }
+
+        double extraCheesePrice = calculateExtraCheesePrice();
+        double extraMeatPrice = calculateExtraMeatPrice();
 
         // Return the total price including base price, topping price, extra cheese price, and extra meat price
         return basePrice + toppingPrice + extraCheesePrice + extraMeatPrice;
     }
 }
+

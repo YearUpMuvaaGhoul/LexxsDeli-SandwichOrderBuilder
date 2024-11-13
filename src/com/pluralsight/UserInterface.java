@@ -2,8 +2,6 @@ package com.pluralsight;
 
 import java.util.Scanner;
 
-import java.util.Scanner;
-
 class UserInterface {
 
     // Method to take the user's order
@@ -28,15 +26,19 @@ class UserInterface {
         sandwich.isToasted = toasted.equalsIgnoreCase("yes");
 
         // Loop to add toppings
-        String addMoreToppings = "";
-        do {
+        String addMoreToppings = "yes";
+        while (addMoreToppings.equalsIgnoreCase("yes")) {
             // Display available toppings
-            System.out.println("Available toppings: \n" +
-                    "Regular: Lettuce, Tomato, Pickles, Peppers, Onions, Jalapenos, Cucumbers, Guacamole, Mushrooms\n" +
-                    "Premium: Steak, Ham, Salami, Roast Beef, Chicken, Bacon, American Cheese, Provolone Cheese, Cheddar Cheese, Swiss Cheese, Avocado\n" +
-                    "Sauces: Mayo, Garlic Aioli, Thousand Island, Mustard, Ranch, Vinaigrette, Ketchup, Oil and Vinegar");
+            System.out.println("Available toppings:");
+            System.out.println("Regular:");
+            System.out.println("1. Lettuce, 2. Tomato, 3. Pickles, 4. Peppers, 5. Onions, 6. Jalapenos, 7. Cucumbers, 8. Guacamole, 9. Mushrooms");
+            System.out.println("Premium:");
+            System.out.println("10. Steak, 11. Ham, 12. Salami, 13. Roast Beef, 14. Chicken, 15. Bacon, 16. American Cheese, 17. Provolone Cheese, 18. Cheddar Cheese, 19. Swiss Cheese, 20. Avocado");
+            System.out.println("Sauces:");
+            System.out.println("21. Mayo, 22. Garlic Aioli, 23. Thousand Island, 24. Mustard, 25. Ranch, 26. Vinaigrette, 27. Ketchup, 28. Oil and Vinegar");
+
             // Prompt for topping selection by number
-            System.out.println("Enter topping number: \n1. Lettuce\n2. Tomato\n3. Pickles\n4. Peppers\n5. Onions\n6. Jalapenos\n7. Cucumbers\n8. Guacamole\n9. Mushrooms\n10. Steak\n11. Ham\n12. Salami\n13. Roast Beef\n14. Chicken\n15. Bacon\n16. American Cheese\n17. Provolone Cheese\n18. Cheddar Cheese\n19. Swiss Cheese\n20. Avocado\n21. Mayo\n22. Garlic Aioli\n23. Thousand Island\n24. Mustard\n25. Ranch\n26. Vinaigrette\n27. Ketchup\n28. Oil and Vinegar");
+            System.out.println("Enter topping number: ");
             int toppingNumber = scanner.nextInt();
             scanner.nextLine();  // Consume the newline
 
@@ -81,7 +83,7 @@ class UserInterface {
             // Prompt to add another topping
             System.out.println("Add another topping? (yes/no): ");
             addMoreToppings = scanner.nextLine();
-        } while (addMoreToppings.equalsIgnoreCase("yes"));
+        }
 
         // Prompt for extra cheese
         System.out.println("Would you like extra cheese? (yes/no): ");
@@ -95,6 +97,82 @@ class UserInterface {
 
         // Add the sandwich to the order
         order.addItem(sandwich);
+
+        // Prompt for drink options
+        System.out.println("Would you like to add a drink? (yes/no): ");
+        String addDrink = scanner.nextLine();
+        if (addDrink.equalsIgnoreCase("yes")) {
+            System.out.println("Select a drink:");
+            System.out.println("1. Pepsi, 2. Lemonade, 3. Mango Lemonade, 4. Mountain Dew, 5. Seltzer, 6. Vitamin Water, 7. Aloe Vera Drink, 8. Fruit Punch");
+            System.out.println("Enter drink number: ");
+            int drinkNumber = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline
+
+            // Map the drink number to the drink name
+            String drinkName = "";
+            switch (drinkNumber) {
+                case 1: drinkName = "Pepsi"; break;
+                case 2: drinkName = "Lemonade"; break;
+                case 3: drinkName = "Mango Lemonade"; break;
+                case 4: drinkName = "Mountain Dew"; break;
+                case 5: drinkName = "Seltzer"; break;
+                case 6: drinkName = "Vitamin Water"; break;
+                case 7: drinkName = "Aloe Vera Drink"; break;
+                case 8: drinkName = "Fruit Punch"; break;
+                default: System.out.println("Invalid drink number. Please try again.");
+            }
+
+            // Prompt for drink size
+            System.out.println("Select a size: 1. Small ($2.00), 2. Medium ($2.50), 3. Large ($3.00)");
+            int drinkSize = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline
+            double drinkPrice = 0;
+            switch (drinkSize) {
+                case 1: drinkPrice = 2.00; break;
+                case 2: drinkPrice = 2.50; break;
+                case 3: drinkPrice = 3.00; break;
+                default: System.out.println("Invalid size. Defaulting to Small ($2.00)"); drinkPrice = 2.00; break;
+            }
+
+            // Add the drink to the order
+            Drink drink = new Drink(drinkName, (drinkSize == 1 ? "Small" : drinkSize == 2 ? "Medium" : "Large"));
+            //Use Drink subclass
+            order.addItem(drink);
+        }
+
+        // Prompt for chips options
+        System.out.println("Would you like to add chips? (yes/no): ");
+        String addChips = scanner.nextLine();
+        if (addChips.equalsIgnoreCase("yes")) {
+            System.out.println("Select a type of chips:");
+            System.out.println("1. Regular Chips, 2. BBQ Chips, 3. Sour Cream & Onion Chips, 4. Salt & Vinegar Chips, 5. Jalapeno Chips, 6. Hot Cheetos, 7. Kettle Chips, 8. Lays Potato Chips, 9. Funyuns");
+            System.out.println("Enter chips number: ");
+            int chipsNumber = scanner.nextInt();
+            scanner.nextLine();  // Consume the newline
+
+            // Map the chips number to the chips name
+            String chipsName = "";
+            switch (chipsNumber) {
+                case 1: chipsName = "Regular Chips"; break;
+                case 2: chipsName = "BBQ Chips"; break;
+                case 3: chipsName = "Sour Cream & Onion Chips"; break;
+                case 4: chipsName = "Salt & Vinegar Chips"; break;
+                case 5: chipsName = "Jalapeno Chips"; break;
+                case 6: chipsName = "Hot Cheetos"; break;
+                case 7: chipsName = "Kettle Chips"; break;
+                case 8: chipsName = "Lays Potato Chips"; break;
+                case 9: chipsName = "Funyuns"; break;
+                default: System.out.println("Invalid chips number. Please try again.");
+            }
+
+            // Set price for chips
+            double chipsPrice = 1.50;
+
+            // Add the chips to the order
+            Chips chips = new Chips(chipsName, chipsPrice);
+            // Use Chips subclass
+            order.addItem(chips);
+        }
     }
 
     // Method to show checkout options and confirm or cancel the order
@@ -108,11 +186,11 @@ class UserInterface {
                 for (Topping topping : sandwich.toppings) {
                     System.out.println("    - " + topping.name + " ($" + topping.calculatePrice(sandwich.size) + ")");
                 }
-                System.out.println("Extra Cheese: " + (sandwich.extraCheese > 0 ? "Yes" : "No"));
-                System.out.println("Extra Meat: " + (sandwich.extraMeat > 0 ? "Yes" : "No"));
+                System.out.println("Extra Cheese: " + (sandwich.extraCheese > 0 ? "Yes, $" + sandwich.calculateExtraCheesePrice() : "No"));
+                System.out.println("Extra Meat: " + (sandwich.extraMeat > 0 ? "Yes, $" + sandwich.calculateExtraMeatPrice() : "No"));
                 System.out.println("Total: $" + sandwich.calculateTotalCost());
             } else {
-                System.out.println("Item: " + item.name + " - $" + item.calculatePrice());
+                System.out.println("Item: " + item.name + " - $" + item.price);
             }
         }
         System.out.println("Total: $" + order.calculateTotal());

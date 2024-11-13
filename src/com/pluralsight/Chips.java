@@ -4,7 +4,7 @@ package com.pluralsight;
 class Chips extends Item {
     String type; // Type of chips
 
-    Chips(String type) {
+    Chips(String type, double chipsPrice) {
         super(type);
         this.type = type;
     }

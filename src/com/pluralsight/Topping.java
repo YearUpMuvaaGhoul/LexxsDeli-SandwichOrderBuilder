@@ -40,10 +40,10 @@ public class Topping {
         toppingMenu.put("Roast Beef", "Premium");
         toppingMenu.put("Chicken", "Premium");
         toppingMenu.put("Bacon", "Premium");
-        toppingMenu.put("American", "Premium");
-        toppingMenu.put("Provolone", "Premium");
-        toppingMenu.put("Cheddar", "Premium");
-        toppingMenu.put("Swiss", "Premium");
+        toppingMenu.put("American Cheese", "Premium");
+        toppingMenu.put("Provolone Cheese", "Premium");
+        toppingMenu.put("Cheddar Cheese", "Premium");
+        toppingMenu.put("Swiss Cheese", "Premium");
         toppingMenu.put("Avocado", "Premium");
 
         // Initialize sauces/condiments (included in price)
@@ -64,10 +64,10 @@ public class Topping {
         premiumToppingPrices.put("Roast Beef", 1.00);
         premiumToppingPrices.put("Chicken", 1.00);
         premiumToppingPrices.put("Bacon", 1.00);
-        premiumToppingPrices.put("American", 0.75);  // Small: $0.75, Medium: $1.50, Large: $2.25
-        premiumToppingPrices.put("Provolone", 0.75);
-        premiumToppingPrices.put("Cheddar", 0.75);
-        premiumToppingPrices.put("Swiss", 0.75);
+        premiumToppingPrices.put("American Cheese", 0.75);  // Small: $0.75, Medium: $1.50, Large: $2.25
+        premiumToppingPrices.put("Provolone Cheese", 0.75);
+        premiumToppingPrices.put("Cheddar Cheese", 0.75);
+        premiumToppingPrices.put("Swiss Cheese", 0.75);
         premiumToppingPrices.put("Avocado", 1.00);
     }
 

@@ -58,27 +58,46 @@ Thank you to Matthew Chrsitenson and the Pluralsight instructor team as well as 
 Here is my diagram showing the flow of inheritence and classes ;
 ![image](https://github.com/user-attachments/assets/d5cacd9b-d2d9-4101-b39a-25821a3c15c1)
 
-Explanation: 
-
+Explanation
 Item: Base class with attributes name and price.
+
 Sandwich: Inherits from Item, includes attributes for size, bread type, toasted status, toppings, extra cheese, extra meat, and au jus sauce.
+
 Drink: Inherits from Item, represents a drink with size.
+
 Chips: Inherits from Item, represents chips with type.
 
 Bread: Represents the type of bread for a sandwich.
+
 Topping: Represents a sandwich topping with a name.
 
 UserInterface: Manages user interactions, including taking orders, adding items, and customizing sandwiches.
+
 Order: Manages a list of items (Item) and calculates the total cost of the order.
 
 
-## Ways to improve or future plans :
 
-## Adding a combo discount for 10% off when a user chooses a drink sandwich and chips in an order, implementing for multiple combos available
-## More error handling and exception throwing 
-## More options for sauces other than Au Jus (Ex: Consume, gravy, etc)
-## Ease of adding a new signature sandwich, without a need to make special classes
-## Option for a sunday only special or seasonal/week specific special options 
+
+Ways to Improve or Future Plans
+Combo Discount:
+
+Add a 10% discount when a user chooses a combo (a drink, sandwich, and chips) in an order, with the ability to implement multiple combos available.
+
+Error Handling:
+
+Implement more error handling and exception throwing to make the application more robust.
+
+Additional Sauces:
+
+Provide more options for sauces beyond Au Jus, such as Consomme, gravy, etc.
+
+Adding Signature Sandwiches:
+
+Simplify the process of adding new signature sandwiches without the need for special classes.
+
+Special Offers:
+
+Implement options for Sunday-only specials or seasonal/week-specific special offers.
 
 
 

@@ -91,13 +91,13 @@ Error Handling:
 Implement more error handling and exception throwing to make the application more robust.
 
 Additional Sauces:
-Provide more options for sauces beyond Au Jus, such as Consomme, gravy, etc.
+Provide more options for sauces beyond Au Jus, such as Consume, gravy, marinara, etc.
 
 Adding Signature Sandwiches:
 Simplify the process of adding new signature sandwiches without the need for special classes.
 
 Special Offers:
-Implement options for Sunday-only specials or seasonal/week-specific special offers. Dsicounts or buy one get one options, etc.
+Implement options for Sunday-only specials or seasonal/week-specific special offers. Discounts, or BOGO options, etc.
 
 Returning customers:
 The ability to re-order or have previous data from a returning customer for ease of ordering or quick-order options.

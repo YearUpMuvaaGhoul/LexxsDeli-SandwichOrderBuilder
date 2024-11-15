@@ -56,71 +56,8 @@ Thank you to Matthew Chrsitenson and the Pluralsight instructor team as well as 
 
 
 Here is my diagram showing the flow of inheritence and classes ;
-+-------------------+
-|      Item         |
-+-------------------+
-| - name: String    |
-| - price: double   |
-+-------------------+
-          ▲
-          |
-+---------+----------+          
-|                    |
-|      Sandwich      |
-+------------------- +
-| - size: String     |
-| - bread: Bread     |
-| - isToasted: boolean |
-| - toppings: List<Topping> |
-| - extraCheese: int |
-| - extraMeat: int   |
-| - hasAuJus: boolean|
-+-------------------+
+![image](https://github.com/user-attachments/assets/d5cacd9b-d2d9-4101-b39a-25821a3c15c1)
 
-+-------------------+
-|      Drink        |
-+-------------------+
-| - size: String    |
-+-------------------+
-
-+-------------------+
-|      Chips        |
-+-------------------+
-| - type: String    |
-+-------------------+
-
-+-------------------+
-|      Bread        |
-+-------------------+
-| - type: String    |
-+-------------------+
-
-+-------------------+
-|      Topping      |
-+-------------------+
-| - name: String    |
-+-------------------+
-
-+-------------------+
-|   UserInterface   |
-+-------------------+
-| - scanner: Scanner|
-| +main(args: String[]): void |
-| +takeOrder(order: Order): void |
-| +addDrink(order: Order, scanner: Scanner): void |
-| +addChips(order: Order, scanner: Scanner): void |
-| +addSandwich(order: Order, scanner: Scanner): void |
-| +showCheckoutOptions(order: Order): void |
-+-------------------+
-
-+-------------------+
-|      Order        |
-+-------------------+
-| - items: List<Item>|
-| +addItem(item: Item): void |
-| +calculateTotal(): double |
-+-------------------+
- 
 Explanation: 
 
 Item: Base class with attributes name and price.
@@ -133,6 +70,14 @@ Topping: Represents a sandwich topping with a name.
 
 UserInterface: Manages user interactions, including taking orders, adding items, and customizing sandwiches.
 Order: Manages a list of items (Item) and calculates the total cost of the order.
+
+
+Ways to improve or future plans :
+-Adding a combo discount for 10% off when a user chooses a drink sandwich and chips in an order, implementing for multiple combos available
+-More error handling and exception throwing 
+-More options for sauces other than Au Jus (Ex: Consume, gravy, etc)
+-Ease of adding a new signature sandwich, without a need to make special classes
+-Option for a sunday only special or seasonal/week specific special options 
 
 
 

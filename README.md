@@ -62,12 +62,19 @@ Here is my diagram showing the flow of inheritence and classes ;
 Explanation
 
 Item: Base class with attributes name and price.
+
 Sandwich: Inherits from Item, includes attributes for size, bread type, toasted status, toppings, extra cheese, extra meat, and au jus sauce.
+
 Drink: Inherits from Item, represents a drink with size.
+
 Chips: Inherits from Item, represents chips with type.
+
 Bread: Represents the type of bread for a sandwich.
+
 Topping: Represents a sandwich topping with a name.
+
 UserInterface: Manages user interactions, including taking orders, adding items, and customizing sandwiches.
+
 Order: Manages a list of items (Item) and calculates the total cost of the order.
 
 

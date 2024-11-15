@@ -52,8 +52,52 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Contact
 For any questions or feedback, please contact [Lexx Matula] at [amatula@appdev.yearup.com].
 
+Thank you to Matthew Christenson and the Pluralsight instructor team as well as the entire YearUp United Staff and Cohort.
+
+-------------------------------------------------------------------------------------------------------------------
+
+Here is my diagram showing the flow of inheritence and classes ;
+![image](https://github.com/user-attachments/assets/d5cacd9b-d2d9-4101-b39a-25821a3c15c1)
+
+Explanation
+
+Item: Base class with attributes name and price.
+
+Sandwich: Inherits from Item, includes attributes for size, bread type, toasted status, toppings, extra cheese, extra meat, and au jus sauce.
+
+Drink: Inherits from Item, represents a drink with size.
+
+Chips: Inherits from Item, represents chips with type.
+
+Bread: Represents the type of bread for a sandwich.
+
+Topping: Represents a sandwich topping with a name.
+
+UserInterface: Manages user interactions, including taking orders, adding items, and customizing sandwiches.
+
+Order: Manages a list of items (Item) and calculates the total cost of the order.
 
 
+---------------------------------------------------------------------------------------------------------------------------
+
+Ways to Improve or Future Plans
+
+Combo Discount:
+Add a 10% discount when a user chooses a combo (a drink, sandwich, and chips) in an order, with the ability to implement multiple combos available.
+
+Error Handling:
+Implement more error handling and exception throwing to make the application more robust.
+
+Additional Sauces:
+Provide more options for sauces beyond Au Jus, such as Consomme, gravy, etc.
+
+Adding Signature Sandwiches:
+Simplify the process of adding new signature sandwiches without the need for special classes.
+
+Special Offers:
+Implement options for Sunday-only specials or seasonal/week-specific special offers.
+
+----------------------------------------------------------------------------------------------------
 
 In this README file, I've included:
 - A project description

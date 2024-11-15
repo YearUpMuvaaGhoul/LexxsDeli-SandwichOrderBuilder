@@ -19,7 +19,11 @@ Users can customize their orders with various toppings, drinks, and chips, and g
 
 
 
-![Order Screen](path/to/order_screen_image.png)
+![Order Screen]![image](https://github.com/user-attachments/assets/2af01713-0052-470b-9205-45b4ab7845ff)
+
+
+![receipt formatting at the end after confirming order and closing console]! ![image](https://github.com/user-attachments/assets/7f640793-7c1d-48e2-9826-f22093b45038)
+
 
 ## Interesting Code Snippet
 ```java

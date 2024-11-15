@@ -73,11 +73,12 @@ Order: Manages a list of items (Item) and calculates the total cost of the order
 
 
 Ways to improve or future plans :
--Adding a combo discount for 10% off when a user chooses a drink sandwich and chips in an order, implementing for multiple combos available
--More error handling and exception throwing 
--More options for sauces other than Au Jus (Ex: Consume, gravy, etc)
--Ease of adding a new signature sandwich, without a need to make special classes
--Option for a sunday only special or seasonal/week specific special options 
+
+Adding a combo discount for 10% off when a user chooses a drink sandwich and chips in an order, implementing for multiple combos available
+More error handling and exception throwing 
+More options for sauces other than Au Jus (Ex: Consume, gravy, etc)
+Ease of adding a new signature sandwich, without a need to make special classes
+Option for a sunday only special or seasonal/week specific special options 
 
 
 

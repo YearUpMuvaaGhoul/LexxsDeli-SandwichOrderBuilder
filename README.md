@@ -47,10 +47,16 @@ Follow the on-screen prompts to place your order.
 
 
 Dependencies
+
 Java Development Kit (JDK) 11 or higher
+
 Intellij Idea 2024, 17.
+
 Gitbash
+
 Github repo
+
+
 
 
 Concepts Used:

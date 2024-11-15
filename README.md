@@ -35,16 +35,41 @@ public void addTopping(Topping topping) {
 This method allows you to add various toppings to your sandwich, showcasing the customizable nature of the application.
 
 How to Run the Application
+
 Clone the repository to your local machine.
+
 Open the project in your preferred Java IDE.
+
 Run the UserInterface class to start the application.
+
 Follow the on-screen prompts to place your order.
+
+
 
 Dependencies
 Java Development Kit (JDK) 11 or higher
 Intellij Idea 2024, 17.
 Gitbash
 Github repo
+
+
+Concepts Used:
+- Object Oriented Programming
+
+- Hashmaps
+
+- Inheritence
+
+- Polymorphism
+  
+- Interface
+
+- FileWriting 
+
+- String Builder
+
+- Date/Time Format
+
 
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.

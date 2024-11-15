@@ -36,27 +36,29 @@ This method allows you to add various toppings to your sandwich, showcasing the 
 
 How to Run the Application
 
-Clone the repository to your local machine.
+1. Clone the repository to your local machine.
 
-Open the project in your preferred Java IDE.
+2. Open the project in your preferred Java IDE.
 
-Run the UserInterface class to start the application.
+3. Run the Main class to start the application.
 
-Follow the on-screen prompts to place your order.
+4. Follow the on-screen prompts to place your order.
 
+5. Confirm your order, and close the console.
 
+----------------------------------------------------------------------------------------------------------
 
-Dependencies
+Dependencies:
 
-Java Development Kit (JDK) 11 or higher
+| Java Development Kit (JDK) 11 or higher
 
-Intellij Idea 2024, 17.
+| Intellij Idea 2024, 17.
 
-Gitbash
+| Gitbash
 
-Github repo
+| Github repo
 
-
+-----------------------------------------------------------------------------------------------------------
 
 
 Concepts Used:
@@ -76,6 +78,7 @@ Concepts Used:
 
 - Date/Time Format
 
+----------------------------------------------------------------------------------------------------------
 
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
@@ -85,7 +88,7 @@ For any questions or feedback, please contact [Lexx Matula] at [amatula@appdev.y
 
 Thank you to Matthew Christenson and the Pluralsight instructor team as well as the entire YearUp United Staff and Cohort.
 
--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 
 Here is my diagram showing the flow of inheritence and classes ;
 

@@ -52,7 +52,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Contact
 For any questions or feedback, please contact [Lexx Matula] at [amatula@appdev.yearup.com].
 
-Thank you to Matthew Chrsitenson and the Pluralsight instructor team as well as the entire YearUp United Staff and Cohort.
+Thank you to Matthew Christenson and the Pluralsight instructor team as well as the entire YearUp United Staff and Cohort.
 
 -------------------------------------------------------------------------------------------------------------------
 
@@ -74,6 +74,7 @@ Order: Manages a list of items (Item) and calculates the total cost of the order
 ---------------------------------------------------------------------------------------------------------------------------
 
 Ways to Improve or Future Plans
+
 Combo Discount:
 Add a 10% discount when a user chooses a combo (a drink, sandwich, and chips) in an order, with the ability to implement multiple combos available.
 

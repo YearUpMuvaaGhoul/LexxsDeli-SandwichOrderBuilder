@@ -14,6 +14,7 @@ public class Sandwich extends Item {
     public boolean isToasted; // Whether the sandwich is toasted
     public int extraCheese; // Extra cheese option
     public int extraMeat; // Extra meat option
+    public boolean hasAuJus; //extra sauce option to add au jus sauce
 
     // Constructor to initialize a sandwich
     public Sandwich(String name, String size, Bread bread) {
@@ -35,6 +36,10 @@ public class Sandwich extends Item {
     // Method to set the amount of extra meat
     public void setExtraMeat(int extraMeat) {
         this.extraMeat = extraMeat;
+    }
+
+    public void setHasAuJus(boolean hasAuJus) {
+        this.hasAuJus = hasAuJus; //Au Jus is free regardless
     }
 
     // Method to calculate the base price of the sandwich based on its size
@@ -107,5 +112,8 @@ public class Sandwich extends Item {
         // Return the total price including base price, topping price, extra cheese price, and extra meat price
         return basePrice + toppingPrice + extraCheesePrice + extraMeatPrice;
     }
+
+
+
 }
 

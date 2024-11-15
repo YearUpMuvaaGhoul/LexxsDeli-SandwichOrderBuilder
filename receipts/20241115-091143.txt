@@ -1,0 +1,20 @@
+Receipt:
+Customer Name: adrys
+Date: 2024/11/15 09:11:43
+-----------------------------
+Item: Custom Sandwich
+  Size: 4
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Steak ($1.0)
+    - Lettuce ($0.0)
+    - American Cheese ($0.75)
+    - Mayo ($0.0)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $8.05
+Drink: Sprite with pebble ice (Medium) - $2.5
+Chips: Sour Cream & Onion Chips - $1.5
+-----------------------------
+Total: $12.05

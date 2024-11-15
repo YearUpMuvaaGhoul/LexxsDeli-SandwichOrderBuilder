@@ -186,6 +186,11 @@ public class UserInterface {
             String extraMeat = scanner.nextLine();
             sandwich.setExtraMeat(extraMeat.equalsIgnoreCase("yes") ? 1 : 0);
 
+            // Prompt for au jus sauce
+            System.out.println("Would you like to add Au Jus dipping sauce? (yes/no): ");
+             String auJus = scanner.nextLine();
+             sandwich.setHasAuJus(auJus.equalsIgnoreCase("yes"));
+
             // Add the sandwich to the order
             order.addItem(sandwich);
 
@@ -207,6 +212,7 @@ public class UserInterface {
                 }
                 System.out.println("Extra Cheese: " + (sandwich.extraCheese > 0 ? "Yes, $" + sandwich.calculateExtraCheesePrice() : "No"));
                 System.out.println("Extra Meat: " + (sandwich.extraMeat > 0 ? "Yes, $" + sandwich.calculateExtraMeatPrice() : "No"));
+                System.out.println("Au Jus Sauce: " + (sandwich.hasAuJus ? "Yes" : "No"));
                 System.out.println("Total: $" + sandwich.calculateTotalCost());
             } else if (item instanceof Drink) {
                 Drink drink = (Drink) item;

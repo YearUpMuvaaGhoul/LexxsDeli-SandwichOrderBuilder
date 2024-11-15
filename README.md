@@ -82,7 +82,7 @@ Order: Manages a list of items (Item) and calculates the total cost of the order
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-Ways to Improve or Future Plans
+Ways to Improve or Future Enhancements
 
 Combo Discount:
 Add a 10% discount when a user chooses a combo (a drink, sandwich, and chips) in an order, with the ability to implement multiple combos available.
@@ -97,7 +97,10 @@ Adding Signature Sandwiches:
 Simplify the process of adding new signature sandwiches without the need for special classes.
 
 Special Offers:
-Implement options for Sunday-only specials or seasonal/week-specific special offers.
+Implement options for Sunday-only specials or seasonal/week-specific special offers. Dsicounts or buy one get one options, etc.
+
+Returning customers:
+The ability to re-order or have previous data from a returning customer for ease of ordering or quick-order options.
 
 ----------------------------------------------------------------------------------------------------
 

@@ -52,6 +52,87 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Contact
 For any questions or feedback, please contact [Lexx Matula] at [amatula@appdev.yearup.com].
 
+Thank you to Matthew Chrsitenson and the Pluralsight instructor team as well as the entire YearUp United Staff and Cohort.
+
+
+Here is my diagram showing the flow of inheritence and classes ;
++-------------------+
+|      Item         |
++-------------------+
+| - name: String    |
+| - price: double   |
++-------------------+
+          ▲
+          |
++---------+----------+          
+|                    |
+|      Sandwich      |
++------------------- +
+| - size: String     |
+| - bread: Bread     |
+| - isToasted: boolean |
+| - toppings: List<Topping> |
+| - extraCheese: int |
+| - extraMeat: int   |
+| - hasAuJus: boolean|
++-------------------+
+
++-------------------+
+|      Drink        |
++-------------------+
+| - size: String    |
++-------------------+
+
++-------------------+
+|      Chips        |
++-------------------+
+| - type: String    |
++-------------------+
+
++-------------------+
+|      Bread        |
++-------------------+
+| - type: String    |
++-------------------+
+
++-------------------+
+|      Topping      |
++-------------------+
+| - name: String    |
++-------------------+
+
++-------------------+
+|   UserInterface   |
++-------------------+
+| - scanner: Scanner|
+| +main(args: String[]): void |
+| +takeOrder(order: Order): void |
+| +addDrink(order: Order, scanner: Scanner): void |
+| +addChips(order: Order, scanner: Scanner): void |
+| +addSandwich(order: Order, scanner: Scanner): void |
+| +showCheckoutOptions(order: Order): void |
++-------------------+
+
++-------------------+
+|      Order        |
++-------------------+
+| - items: List<Item>|
+| +addItem(item: Item): void |
+| +calculateTotal(): double |
++-------------------+
+ 
+Explanation: 
+
+Item: Base class with attributes name and price.
+Sandwich: Inherits from Item, includes attributes for size, bread type, toasted status, toppings, extra cheese, extra meat, and au jus sauce.
+Drink: Inherits from Item, represents a drink with size.
+Chips: Inherits from Item, represents chips with type.
+
+Bread: Represents the type of bread for a sandwich.
+Topping: Represents a sandwich topping with a name.
+
+UserInterface: Manages user interactions, including taking orders, adding items, and customizing sandwiches.
+Order: Manages a list of items (Item) and calculates the total cost of the order.
 
 
 

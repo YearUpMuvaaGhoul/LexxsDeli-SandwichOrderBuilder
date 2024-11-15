@@ -1,0 +1,8 @@
+Receipt:
+Customer Name: lexx
+Date: 2024/11/15 08:04:03
+-----------------------------
+Drink: Orange Soda with pebble ice (Medium) - $2.5
+Drink: Pepsi with pebble ice (Large) - $3.0
+-----------------------------
+Total: $5.5

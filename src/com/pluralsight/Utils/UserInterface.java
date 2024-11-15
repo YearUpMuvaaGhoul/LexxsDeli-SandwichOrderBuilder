@@ -4,7 +4,6 @@ import com.pluralsight.BaseClasses.Item;
 import com.pluralsight.BaseClasses.Order;
 import com.pluralsight.OtherOrderItems.Chips;
 import com.pluralsight.OtherOrderItems.Drink;
-import com.pluralsight.Utils.Receipt;
 import com.pluralsight.SandwichBuilder.Bread;
 import com.pluralsight.SandwichBuilder.Sandwich;
 import com.pluralsight.SandwichBuilder.Topping;

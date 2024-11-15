@@ -58,7 +58,8 @@ Thank you to Matthew Christenson and the Pluralsight instructor team as well as 
 
 Here is my diagram showing the flow of inheritence and classes ;
 
-![image](https://github.com/user-attachments/assets/d5cacd9b-d2d9-4101-b39a-25821a3c15c1)
+![image](https://github.com/user-attachments/assets/a75d454b-2a9e-4287-91a9-b257806c30a4)
+
 
 Explanation
 

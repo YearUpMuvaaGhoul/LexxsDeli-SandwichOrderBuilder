@@ -1,0 +1,24 @@
+Receipt:
+Customer Name: ashley
+Date: 2024/11/18 19:27:17
+-----------------------------
+Drink: Orange Soda with pebble ice (Medium) - $2.5
+Item: Custom Sandwich
+  Size: 12
+  Bread: white
+  Toasted: Yes
+  Toppings:
+    - Steak ($3.0)
+    - Tomato ($0.0)
+    - Lettuce ($0.0)
+    - Mayo ($0.0)
+    - Bacon ($3.0)
+    - Provolone Cheese ($2.25)
+    - Garlic Aioli ($0.0)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $19.15
+Chips: BBQ Chips - $1.5
+Chips: Salt & Vinegar Chips - $1.5
+-----------------------------
+Total: $24.65

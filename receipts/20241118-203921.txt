@@ -1,0 +1,20 @@
+Receipt:
+Customer Name: taryn
+Date: 2024/11/18 20:39:21
+-----------------------------
+Item: Custom Sandwich
+  Size: 8
+  Bread: hero
+  Toasted: Yes
+  Toppings:
+    - Lettuce ($0.0)
+    - Steak ($2.0)
+    - Mayo ($0.0)
+    - Provolone Cheese ($1.5)
+  Extra Cheese: Yes
+  Extra Meat: Yes
+  Total: $12.1
+Drink: Iced Tea with pebble ice (Medium) - $2.5
+Chips: Salt & Vinegar Chips - $1.5
+-----------------------------
+Total: $16.1
